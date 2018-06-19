@@ -101,12 +101,7 @@
  	float: left;
  	width: 50%;
  }
- footer > div > .footer-content > img {
- 	width: 50%;
- 	padding-left: 8px;
- 	padding-right: 10px;
- 	float: left;
- }
+ 
 
 
  .clear:after {
@@ -158,6 +153,23 @@
 	 	font-size: 143%;
 	 	letter-spacing: 3px;
 	 }
+
+	footer > div > .footer-content > img {
+ 	width: 100%;
+ 	padding-left: 8px;
+ 	padding-right: 10px;
+ 	float: left;
+ }
+    footer > div > .footer-content > h3 {
+    	width: 100%;
+    	text-align: center;
+    	padding: 15px;
+    }
+     footer > div > .footer-content > p {
+     	text-align: justify;
+     	padding: 15px;
+     }
+
 
   	 	.container {
   	 		width: 100vw;
@@ -302,6 +314,13 @@
 		  	margin-right: 5px;
 		  }
 
+    footer > div > .footer-content > img {
+ 	width: 50%;
+ 	padding-left: 8px;
+ 	padding-right: 10px;
+ 	float: left;
+ }
+
  }
 
 
@@ -313,6 +332,13 @@
  */
 
  @media only screen and (min-width: 961px) {
+
+ 	footer > div > .footer-content > img {
+ 	width: 50%;
+ 	padding-left: 8px;
+ 	padding-right: 10px;
+ 	float: left;
+ }
 		 	.col-lg-1 {
 		 	width: 8.33%; /* 100% / 12 columns = 8.33% */
 		 }
