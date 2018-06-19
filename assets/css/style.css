@@ -1,0 +1,370 @@
+/*
+ *
+ * CSS Reset
+ *
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+ *
+ * General Rules
+ *
+ */
+
+ body {
+ 	background-color: #bdeccf;
+    font-family: 'Playfair Display', serif;
+ }
+
+ h2 {
+ 	font-family: 'Cinzel', serif;
+ 	text-transform: uppercase;
+ 	letter-spacing: 3px;
+ }
+
+
+ header {
+ 	min-height: 10vh;
+ 	background-color: #222
+ }
+ header > div > h1 {
+ 	color: #fff;
+ 	line-height: 10vh;
+ 	margin-left: 10px;
+ }
+
+ main {
+ 	min-height: 60vh;
+ 	color: #000;
+ }
+
+ div.left {
+ 	padding: 10px;
+ }
+
+
+ div.right {
+ 	background-color: #846c98;
+ 	padding: 10px;
+ 	margin-top: 10px;
+  }
+ 
+
+  div.main-content > h2 {
+  	padding: 15px;
+  	text-align: center;
+  	letter-spacing: 2px;
+  }
+  div.main-content > img {
+  	width: 71%;
+  	display: block;
+  	margin: 0 auto;
+  	border: 2px solid silver;
+  	
+  }
+  div.main-content > p {
+  	padding: 15px;
+  }
+
+  div.article-content > h2 {
+  	padding: 15px;
+  	text-align: center;
+  }
+  div.article-content > img {
+  	display: block;
+  	width: 70%;
+  	margin: 0 auto;
+  	border: 2px solid silver;
+  }
+  div.article-content > p {
+  	padding: 5px 10px 0 10px;
+  	text-align: justify;
+  }
+  
+
+ /*
+  *
+  * Footer
+  *
+  */
+
+ div.footer-content {
+ 	margin-top: 10px;
+ 	font-size: 15px;
+ }
+ footer > div .footer-content > h3 {
+ 	float: left;
+ 	width: 50%;
+ }
+ footer > div > .footer-content > img {
+ 	width: 50%;
+ 	padding-left: 8px;
+ 	padding-right: 10px;
+ 	float: left;
+ }
+
+
+ .clear:after {
+  	content: "";
+  	display: block;
+  	clear: both;
+  }
+
+
+
+ /*
+  *
+  * Custom CSS Fluid Grid System
+  *
+  */
+
+  .container {
+  	width: 80vw;
+  	margin: 0 auto;
+  }
+
+  .container-fluid {
+  	width: 100vw;
+  }
+
+  .row:after {
+  	content: "";
+  	display: block;
+  	clear: both;
+  }
+
+  [class*="col"] {
+  	float: left;
+  }
+
+ /*
+  *
+  * Mobile Devices
+  *
+  */
+
+  @media only screen and (max-width: 400px) {
+
+
+	  	header > div > h1 {
+	 	color: #fff;
+	 	line-height: 10vh;
+	 	margin-left: 10px;
+	 	font-size: 143%;
+	 	letter-spacing: 3px;
+	 }
+
+  	 	.container {
+  	 		width: 100vw;
+  	 	}
+
+  	     .col-sm-1 {
+		  width: 8.33%; /* 100% / 12 columns = 8.33% */
+		 }
+
+		 .col-sm-2 {
+		 	width: 16.66%;
+		 }
+
+		 .col-sm-3 {
+		 	width: 25%;
+		 }
+
+		 .col-sm-4 {
+		 	width: 33.33%;
+		 }
+
+		 .col-sm-5 {
+		 	width: 41.66%;
+		 }
+
+		 .col-sm-6 {
+		 	width: 50%;
+		 }
+
+		 .col-sm-7 {
+		 	width: 58.33%;
+		 }
+
+		 .col-sm-8 {
+		 	width: 66.66%;
+		 }
+
+		 .col-sm-9 {
+		 	width: 75%;
+		 }
+
+		 .col-sm-10 {
+		 	width: 83.33%;
+		 }
+
+		 .col-sm-11 {
+		 	width: 91.66%;
+		 }
+
+		 .col-sm-12 {
+		 	width: 100%;
+		 }
+
+
+  }
+
+
+
+/*
+ *
+ * Tablet Devices
+ *
+ */
+
+ @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+ 		.container {
+  	 		width: 100vw;
+  	 	}
+
+		  .col-md-1 {
+		  width: 8.33%; /* 100% / 12 columns = 8.33% */
+		 }
+
+		 .col-md-2 {
+		 	width: 16.66%;
+		 }
+
+		 .col-md-3 {
+		 	width: 25%;
+		 }
+
+		 .col-md-4 {
+		 	width: 33.33%;
+		 }
+
+		 .col-md-5 {
+		 	width: 41.66%;
+		 }
+
+		 .col-md-6 {
+		 	width: 50%;
+		 }
+
+		 .col-md-7 {
+		 	width: 58.33%;
+		 }
+
+		 .col-md-8 {
+		 	width: 66.66%;
+		 }
+
+		 .col-md-9 {
+		 	width: 75%;
+		 }
+
+		 .col-md-10 {
+		 	width: 83.33%;
+		 }
+
+		 .col-md-11 {
+		 	width: 91.66%;
+		 }
+
+		 .col-md-12 {
+		 	width: 100%;
+		 }
+
+		 /*
+		  *
+		  * Tablet General Rules
+		  *
+		  */
+
+		  div.main-content > h2 {
+		  	text-align: left;
+		  	padding-left: 17px;
+		  }
+		  div.main-content > img {
+		  	float: left;
+		  	width: 30%;
+		  	margin-left: 17px;
+		  	margin-right: 5px;
+		  }
+
+		  div.article-content > h2 {
+		  	text-align: left;
+		  }
+		  div.article-content > img {
+		  	float: left;
+		  	width: 30%;
+		  	margin-right: 5px;
+		  }
+
+ }
+
+
+ 
+/*
+ *
+ * Desktop Devices
+ *
+ */
+
+ @media only screen and (min-width: 961px) {
+		 	.col-lg-1 {
+		 	width: 8.33%; /* 100% / 12 columns = 8.33% */
+		 }
+
+		 .col-lg-2 {
+		 	width: 16.66%;
+		 }
+
+		 .col-lg-3 {
+		 	width: 25%;
+		 }
+
+		 .col-lg-4 {
+		 	width: 33.33%;
+		 }
+
+		 .col-lg-5 {
+		 	width: 41.66%;
+		 }
+
+		 .col-lg-6 {
+		 	width: 50%;
+		 }
+
+		 .col-lg-7 {
+		 	width: 58.33%;
+		 }
+
+		 .col-lg-8 {
+		 	width: 66.66%;
+		 }
+
+		 .col-lg-9 {
+		 	width: 75%;
+		 }
+
+		 .col-lg-10 {
+		 	width: 83.33%;
+		 }
+
+		 .col-lg-11 {
+		 	width: 91.66%;
+		 }
+
+		 .col-lg-12 {
+		 	width: 100%;
+		 }
+
+
+ }
+ 
+
+
+
+ 
